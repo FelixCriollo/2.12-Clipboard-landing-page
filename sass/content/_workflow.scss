@@ -1,0 +1,19 @@
+@use '../config' as *;
+
+.workflow {
+  & .descript {
+    margin-top: .6em;
+  }
+
+  & .title-descript {
+    margin-block: 1.75em 1em;
+  }
+
+  &__item + &__item {
+    margin-top: 3.88em;
+  }
+}
+
+.workflow-content {
+  margin-top: 5.5em;
+}

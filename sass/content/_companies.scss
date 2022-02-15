@@ -1,0 +1,13 @@
+@use '../config' as *;
+
+.companies {
+  margin-top: 7.875em;
+  display: grid;
+  place-items: center;
+  gap: 4.125em;
+
+  &__img {
+    width: 8.75em;
+  }
+}
+

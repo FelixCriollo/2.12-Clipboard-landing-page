@@ -1,0 +1,14 @@
+@use '../config' as *;
+
+.header {
+  background: url("/images/bg-header-mobile.png") no-repeat top;
+  background-size: contain;
+
+  &__logo {
+    margin-block: 7.8em 3.7em;
+    width: 7.75em;
+  }
+}
+
+
+

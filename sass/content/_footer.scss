@@ -1,0 +1,30 @@
+@use '../config' as *;
+
+.footer {
+  background: hsl(220, 18%, 97%);
+  padding-block: 3.6em;
+  
+  &__logo {
+    width: 3.4375em;
+  }
+  
+  &__nav-item {
+    color: var(--headers);
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+}
+
+.footer-nav {
+  margin-block: 2.75em 3em;
+  display: grid;
+  gap: 1.6em;
+}
+
+.footer-social {
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  gap: 2.5em;
+
+}

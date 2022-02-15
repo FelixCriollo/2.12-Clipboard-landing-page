@@ -1,0 +1,48 @@
+@use '../../config' as *;
+
+.container {
+  width: min(82.67%, 500px);
+  margin-inline: auto;
+  text-align: center;
+}
+
+.main {
+  margin-block: 9.87500rem;
+}
+
+
+.btn-container {
+  margin-top: 3.2em;
+}
+
+.btn {
+  border: none;
+  color: #fff;
+  width: 100%;
+  font-weight: 600;
+  font-size: 1.125rem;
+  letter-spacing: .2px;
+  padding-block: calc(.9em + 3px) .9em;
+  border-radius: 50px;
+  border-bottom: 3px solid #fff;
+  border-left: 3px solid #fff;
+
+  & + & {
+    margin-top: 1.1em;
+  }
+  
+  &--ios {
+    background: var(--primary-cyan);
+    border-color: hsl(171, 71%, 37%);
+  }
+  &--mac {
+    background: var(--primary-blue);
+    border-color: hsl(233, 64%, 59%);
+  }
+}
+
+.titles-containtes {
+  & .descript {
+    margin-top: 1.2em;
+  }
+}

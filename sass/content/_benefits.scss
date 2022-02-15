@@ -1,0 +1,25 @@
+@use '../config' as *;
+
+.benefits {
+  &__hero {
+    width: 100%;
+    margin-bottom: 3.25em;
+  }
+
+  &__items {
+    & + & {
+      margin-top: 3em;
+    }
+  }
+
+  // contains hero and list of benefits
+  .benefits-content {
+    margin-top: 4.5em;
+  }
+}
+// containst benefits
+.benefits-list {
+  .descript--subtitle {
+    margin-top: 1rem;
+  }
+}

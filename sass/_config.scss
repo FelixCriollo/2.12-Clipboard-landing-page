@@ -1,0 +1,35 @@
+:root {
+  --primary-cyan: hsl(171, 66%, 44%);
+  --primary-blue: hsl(233, 100%, 69%);
+
+  --headers: hsl(210, 10%, 33%);
+  --text: hsl(201, 11%, 66%);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Bai Jamjuree', sans-serif;
+  color: var(--text);
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--headers);
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
