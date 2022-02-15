@@ -16,10 +16,49 @@
   .benefits-content {
     margin-top: 4.5em;
   }
+  
+  @include desktop {
+    & .descript {
+      margin-top: 1.25em;
+    }
+    
+    &__hero {
+      margin-bottom: 0;
+      width: 70%;
+      transform: translateX(-26%);
+    }
+    
+    &__items {
+      width: min(100%, 336px);
+      transform: translateX(-26%);
+
+      & + & {
+        margin-top: 3.9em;
+      }
+    }
+    
+    .benefits-content {
+      margin-top: 5.4em;
+      display: flex;
+      text-align: left;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
 }
 // containst benefits
 .benefits-list {
   .descript--subtitle {
     margin-top: 1rem;
+  }
+  
+  @include desktop {
+    width: 40%;
+    margin-bottom: 1.8em;
+    
+    .descript--subtitle {
+      margin-top: .75rem;
+      line-height: 1.75;
+    }
   }
 }

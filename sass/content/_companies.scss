@@ -3,6 +3,7 @@
 .companies {
   margin-top: 7.875em;
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8.75em, 1fr));
   place-items: center;
   gap: 4.125em;
 

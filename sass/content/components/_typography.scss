@@ -3,16 +3,22 @@
 // titles
 .title {
   font-size: 1.93rem;
+
+  @include desktop {
+    font-size: 2.78125rem;
+  }
 }
 
 .subtitle {
   font-size: 1.71875rem;
-  // line-height: 1.5;
+  
+  @include desktop {
+    font-size: 2.1875rem;
+  }
 }
 
 .title-descript {
   font-size: 1.4375rem;
-  // line-height: 1.5;
 }
 
 // subtitles
@@ -23,6 +29,14 @@
   &--subtitle {
     font-size: 1rem;
     line-height: 1.5;
+  }
+  
+  @include desktop {
+    font-size: 1.12500rem;
+    
+    .header & {
+      font-size: 1.265625rem;
+    }
   }
 }
 

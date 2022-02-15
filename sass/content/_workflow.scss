@@ -8,12 +8,36 @@
   & .title-descript {
     margin-block: 1.75em 1em;
   }
+  
+  @include desktop {
+    & .descript {
+      margin-top: 1.5em;
+      line-height: 2;
+    }
+  
+    & .title-descript {
+      margin-block: 1.75em 1em;
+    }
 
-  &__item + &__item {
-    margin-top: 3.88em;
+    &__item {
+      & + & {
+        margin-bottom: 1em;
+      }
+    }
   }
+
 }
 
 .workflow-content {
   margin-top: 5.5em;
+  display: grid;
+  gap: 3.88em;
+  
+  @include desktop {
+    margin-top: .5em;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 300px;
+    place-items: center;
+    gap: 1.875em;
+  }
 }

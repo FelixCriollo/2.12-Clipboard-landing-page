@@ -13,12 +13,50 @@
     font-size: 1.125rem;
     font-weight: 600;
   }
+
+  @include desktop {
+    padding-block: 3em;
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__nav-item {
+      transition: color .3s ease-in-out;
+      
+      &:hover {
+        color: var(--primary-cyan);
+        transition: color .3s ease-in-out;
+      }
+    }
+
+    &_social-link {
+      transition: all .3s ease-in-out;
+
+      &:hover path {
+        transition: all .3s ease-in-out;
+        fill: var(--primary-cyan);
+      }
+    }
+  }
 }
 
 .footer-nav {
   margin-block: 2.75em 3em;
   display: grid;
   gap: 1.6em;
+  
+  @include desktop {
+    margin-block: 0;
+    margin-right: 7em;
+    text-align: left;
+    width: 560px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    row-gap: 1.2em;
+  }
 }
 
 .footer-social {
@@ -26,5 +64,11 @@
   display: flex;
   justify-content: center;
   gap: 2.5em;
-
+  
+  @include desktop {
+    gap: unset;
+    margin: 0;
+    justify-content: space-between;
+    width: 120px;
+  }
 }

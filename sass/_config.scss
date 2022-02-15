@@ -33,3 +33,9 @@ ul {
 a {
   text-decoration: none;
 }
+
+@mixin desktop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}

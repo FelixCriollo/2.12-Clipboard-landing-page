@@ -4,15 +4,31 @@
   width: min(82.67%, 500px);
   margin-inline: auto;
   text-align: center;
+  
+  @include desktop {
+    width: min(90%, 1110px);
+  }
 }
 
-.main {
+.main { 
   margin-block: 9.87500rem;
+  
+  @include desktop {
+    margin-block: 9.3rem;
+  }
 }
 
 
 .btn-container {
   margin-top: 3.2em;
+  
+  @include desktop {
+    width: 470px;
+    margin-inline: auto;
+    margin-top: 2.7em;
+    display: flex;
+    gap: 1em;
+  }
 }
 
 .btn {
@@ -26,7 +42,14 @@
   border-radius: 50px;
   border-bottom: 3px solid #fff;
   border-left: 3px solid #fff;
+  transition: opacity .3s ease-in;
+  cursor: pointer;
 
+  &:hover {
+    transition: opacity .3s ease-in;
+    opacity: .7;
+  }
+  
   & + & {
     margin-top: 1.1em;
   }
@@ -34,15 +57,35 @@
   &--ios {
     background: var(--primary-cyan);
     border-color: hsl(171, 71%, 37%);
+    box-shadow: 0px 5px 15px rgba($color: #26BBA5, $alpha: 0.5);
   }
   &--mac {
     background: var(--primary-blue);
     border-color: hsl(233, 64%, 59%);
+    box-shadow: 0px 5px 15px rgba($color: #5463d9, $alpha: 0.5);
+  }
+  
+  @include desktop {
+    font-size: 1.11rem;
+    letter-spacing: .65px;
+    
+    & + & {
+      margin-top: 0em;
+    }
   }
 }
 
 .titles-containtes {
   & .descript {
     margin-top: 1.2em;
+  }
+  
+  @include desktop {
+    width: 696px;
+    margin-inline: auto;
+    
+    & .descript {
+      margin-top: .9em;
+    }
   }
 }
