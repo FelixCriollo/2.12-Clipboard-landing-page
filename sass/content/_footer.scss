@@ -1,6 +1,7 @@
 @use '../config' as *;
 
 .footer {
+  position: relative;
   background: hsl(220, 18%, 97%);
   padding-block: 3.6em;
   
