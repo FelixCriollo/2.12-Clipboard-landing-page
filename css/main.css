@@ -97,11 +97,15 @@ a {
 }
 
 .main {
-  margin-block: 9.875rem;
+  background: url("../images/bg-header-mobile.png") no-repeat top;
+  background-size: 100%;
+  margin-bottom: 9.875rem;
 }
 @media (min-width: 1024px) {
   .main {
-    margin-block: 9.3rem;
+    background: url("../images/bg-header-desktop.png") no-repeat top;
+    background-size: 100%;
+    margin-bottom: 9.3rem;
   }
 }
 
@@ -122,6 +126,7 @@ a {
   border: none;
   color: #fff;
   width: 100%;
+  display: block;
   font-weight: 600;
   font-size: 1.125rem;
   letter-spacing: 0.2px;
@@ -172,20 +177,18 @@ a {
   }
 }
 
-.header {
-  background: url("../images/bg-header-mobile.png") no-repeat top;
-  background-size: 100% 100%;
+.hero {
+  margin-bottom: 9.8em;
 }
-.header__logo {
+.hero__logo {
   margin-block: 7.8em 3.7em;
   width: 7.75em;
 }
 @media (min-width: 1024px) {
-  .header {
-    background: url("../images/bg-header-desktop.png") no-repeat top;
+  .hero {
     background-size: 100% 100%;
   }
-  .header__logo {
+  .hero__logo {
     margin-block: 8.2em 3.5em;
   }
 }

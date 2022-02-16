@@ -1,16 +1,13 @@
 @use '../config' as *;
 
-.header {
-  background: url("../images/bg-header-mobile.png") no-repeat top;
-  background-size: 100% 100%;
-  
+.hero {
+  margin-bottom: 9.8em;
   &__logo {
     margin-block: 7.8em 3.7em;
     width: 7.75em;
   }
   
   @include desktop {
-    background: url("../images/bg-header-desktop.png") no-repeat top;
     background-size: 100% 100%;
     
     &__logo {

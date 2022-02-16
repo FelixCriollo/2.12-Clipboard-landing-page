@@ -11,10 +11,14 @@
 }
 
 .main { 
-  margin-block: 9.87500rem;
+  background: url("../images/bg-header-mobile.png") no-repeat top;
+  background-size: 100%;
+  margin-bottom: 9.87500rem;
   
   @include desktop {
-    margin-block: 9.3rem;
+    background: url("../images/bg-header-desktop.png") no-repeat top;
+    background-size: 100%;
+    margin-bottom: 9.3rem;
   }
 }
 
@@ -35,6 +39,7 @@
   border: none;
   color: #fff;
   width: 100%;
+  display: block;
   font-weight: 600;
   font-size: 1.125rem;
   letter-spacing: .2px;
